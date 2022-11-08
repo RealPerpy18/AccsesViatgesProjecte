@@ -22,6 +22,9 @@ public interface DAO {
     boolean deleteBitllet(Bitllet bit);
 
 
+
+
+
     List<Localitat> TotsLoc();
     Client cercaLocalitat(int id);
 
