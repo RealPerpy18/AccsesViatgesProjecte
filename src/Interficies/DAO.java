@@ -2,6 +2,8 @@ package Interficies;
 
 import Objects.Bitllet;
 import Objects.Client;
+import Objects.Localitat;
+
 import java.util.List;
 
 public interface DAO {
@@ -18,5 +20,13 @@ public interface DAO {
     boolean createBitllet(Bitllet bit);
     boolean updateBitllet(Bitllet bit);
     boolean deleteBitllet(Bitllet bit);
+
+
+    List<Localitat> TotsLoc();
+    Client cercaLocalitat(int id);
+
+    boolean createLocalitat(Localitat loc);
+    boolean updateLocalitat(Localitat loc);
+    boolean deleteLocalitat(Localitat loc);
 
 }
