@@ -9,8 +9,8 @@ public class Localitat {
     public Localitat() {
     }
 
-    public Localitat(int id_localitat, String nom, String pais, String abreviacio) {
-        this.id = id_localitat;
+    public Localitat(int id, String nom, String pais, String abreviacio) {
+        this.id = id;
         this.nom = nom;
         this.pais = pais;
         this.abreviacio = abreviacio;
