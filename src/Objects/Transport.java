@@ -1,7 +1,7 @@
 package Objects;
 
 public class Transport {
-    int idTransport;
+    int id;
     int sNormal;
     int sPreferent;
     String nom;
@@ -10,18 +10,18 @@ public class Transport {
     }
 
     public Transport(int idTransport, int sNormal, int sPreferent, String nom) {
-        this.idTransport = idTransport;
+        this.id = idTransport;
         this.sNormal = sNormal;
         this.sPreferent = sPreferent;
         this.nom = nom;
     }
 
-    public int getIdTransport() {
-        return idTransport;
+    public int getId() {
+        return id;
     }
 
-    public void setIdTransport(int idTransport) {
-        this.idTransport = idTransport;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getsNormal() {
