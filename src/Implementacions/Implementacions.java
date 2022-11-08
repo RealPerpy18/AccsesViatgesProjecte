@@ -3,32 +3,36 @@ package Implementacions;
 import Interficies.DAO;
 import Objects.*;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class Implementacions implements DAO {
 
     @Override
     public List<Client> TotsCli() {
+
         return null;
     }
 
     @Override
-    public Client cercaClient(int id) {
+    public Client cercaClient(int id, Connection con) {
         return null;
     }
 
+
     @Override
-    public boolean createClient(Client cli) {
+    public boolean createClient(Client cli, Connection con) {
+
         return false;
     }
 
     @Override
-    public boolean updateClient(Client cli) {
+    public boolean updateClient(Client cli, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteClient(Client cli) {
+    public boolean deleteClient(Client cli, Connection con) {
         return false;
     }
 
@@ -38,22 +42,22 @@ public class Implementacions implements DAO {
     }
 
     @Override
-    public Client cercaBitllet(int id) {
+    public Client cercaBitllet(int id, Connection con) {
         return null;
     }
 
     @Override
-    public boolean createBitllet(Bitllet bit) {
+    public boolean createBitllet(Bitllet bit, Connection con) {
         return false;
     }
 
     @Override
-    public boolean updateBitllet(Bitllet bit) {
+    public boolean updateBitllet(Bitllet bit, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteBitllet(Bitllet bit) {
+    public boolean deleteBitllet(Bitllet bit, Connection con) {
         return false;
     }
 
@@ -63,22 +67,22 @@ public class Implementacions implements DAO {
     }
 
     @Override
-    public Client cercaCompra(int id) {
+    public Client cercaCompra(int id, Connection con) {
         return null;
     }
 
     @Override
-    public boolean createCompra(Compra com) {
+    public boolean createCompra(Compra com, Connection con) {
         return false;
     }
 
     @Override
-    public boolean updateCompra(Compra com) {
+    public boolean updateCompra(Compra com, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteCompra(Compra com) {
+    public boolean deleteCompra(Compra com, Connection con) {
         return false;
     }
 
@@ -88,22 +92,22 @@ public class Implementacions implements DAO {
     }
 
     @Override
-    public Client cercaLocalitat(int id) {
+    public Client cercaLocalitat(int id, Connection con) {
         return null;
     }
 
     @Override
-    public boolean createLocalitat(Localitat loc) {
+    public boolean createLocalitat(Localitat loc, Connection con) {
         return false;
     }
 
     @Override
-    public boolean updateLocalitat(Localitat loc) {
+    public boolean updateLocalitat(Localitat loc, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteLocalitat(Localitat loc) {
+    public boolean deleteLocalitat(Localitat loc, Connection con) {
         return false;
     }
 
@@ -113,22 +117,22 @@ public class Implementacions implements DAO {
     }
 
     @Override
-    public Client cercaTransport(int id) {
+    public Client cercaTransport(int id, Connection con) {
         return null;
     }
 
     @Override
-    public boolean createTransport(Transport tra) {
+    public boolean createTransport(Transport tra, Connection con) {
         return false;
     }
 
     @Override
-    public boolean updateTransport(Transport tra) {
+    public boolean updateTransport(Transport tra, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteTransport(Transport tra) {
+    public boolean deleteTransport(Transport tra, Connection con) {
         return false;
     }
 
@@ -138,22 +142,22 @@ public class Implementacions implements DAO {
     }
 
     @Override
-    public Client cercaViatge(int id) {
+    public Client cercaViatge(int id, Connection con) {
         return null;
     }
 
     @Override
-    public boolean createTViatge(Viatge via) {
+    public boolean createTViatge(Viatge via, Connection con) {
         return false;
     }
 
     @Override
-    public boolean updateViatge(Viatge via) {
+    public boolean updateViatge(Viatge via, Connection con) {
         return false;
     }
 
     @Override
-    public boolean deleteViatge(Viatge via) {
+    public boolean deleteViatge(Viatge via, Connection con) {
         return false;
     }
 }
