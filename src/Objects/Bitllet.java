@@ -6,6 +6,9 @@ public class Bitllet {
     String tipusSeient;
     int idViatge;
 
+    public Bitllet() {
+    }
+
     public Bitllet(int id, double preu, String tipusSeient, int idViatge) {
         this.id = id;
         this.preu = preu;
