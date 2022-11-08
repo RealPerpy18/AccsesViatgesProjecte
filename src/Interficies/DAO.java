@@ -1,8 +1,6 @@
 package Interficies;
 
-import Objects.Bitllet;
-import Objects.Client;
-import Objects.Localitat;
+import Objects.*;
 
 import java.util.List;
 
@@ -23,7 +21,12 @@ public interface DAO {
 
 
 
+    List<Compra> TotsCom();
+    Client cercaCompra(int id);
 
+    boolean createCompra(Compra com);
+    boolean updateCompra(Compra com);
+    boolean deleteCompra(Compra com);
 
     List<Localitat> TotsLoc();
     Client cercaLocalitat(int id);
@@ -31,5 +34,22 @@ public interface DAO {
     boolean createLocalitat(Localitat loc);
     boolean updateLocalitat(Localitat loc);
     boolean deleteLocalitat(Localitat loc);
+
+
+    List<Transport> TotsTran();
+    Client cercaTransport(int id);
+
+    boolean createTransport(Transport tra);
+    boolean updateTransport(Transport tra);
+    boolean deleteTransport(Transport tra);
+
+
+    List<Viatge> TotsVia();
+    Client cercaViatge(int id);
+
+    boolean createTViatge(Viatge via);
+    boolean updateViatge(Viatge via);
+    boolean deleteViatge(Viatge via);
+
 
 }
