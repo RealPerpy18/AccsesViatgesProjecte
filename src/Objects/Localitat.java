@@ -1,7 +1,7 @@
 package Objects;
 
 public class Localitat {
-    int idLocalitat;
+    int id;
     String nom;
     String pais;
     String abreviacio;
@@ -10,18 +10,18 @@ public class Localitat {
     }
 
     public Localitat(int id_localitat, String nom, String pais, String abreviacio) {
-        this.idLocalitat = id_localitat;
+        this.id = id_localitat;
         this.nom = nom;
         this.pais = pais;
         this.abreviacio = abreviacio;
     }
 
-    public int getIdLocalitat() {
-        return idLocalitat;
+    public int getId() {
+        return id;
     }
 
-    public void setIdLocalitat(int idLocalitat) {
-        this.idLocalitat = idLocalitat;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNom() {
