@@ -1,8 +1,11 @@
 package Objects;
 
-import java.time.LocalDate;
+import Interficies.DAO;
 
-public class Client {
+import java.time.LocalDate;
+import java.util.List;
+
+public class Client  {
     int id;
     String dni;
     String nom;
@@ -69,4 +72,6 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
