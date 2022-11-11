@@ -1,9 +1,7 @@
 package Objects;
 
-import Interficies.DAO;
-
 import java.time.LocalDate;
-import java.util.List;
+import java.time.LocalDateTime;
 
 public class Client  {
     int id;

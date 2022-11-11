@@ -4,6 +4,8 @@ import Interficies.DAO;
 import Objects.*;
 
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 public class Implementacions implements DAO {
@@ -16,12 +18,25 @@ public class Implementacions implements DAO {
 
     @Override
     public Client cercaClient(int id, Connection con) {
+        try {
+            Statement stmt=con.createStatement();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         return null;
     }
 
 
     @Override
     public boolean createClient(Client cli, Connection con) {
+        try {
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("Insert into cens values(\'"+cli.getId()+"\',\'"+cli.getDni()+"\',\'"+cli.getNom()+"\',\'"+cli.getDataNaix()+"\',\'"+cli.getTelefon()+"\',\'"+cli.getEmail()+"\')");
+        }
+        catch(Exception a) {
+            System.out.println(a);
+        }
 
         return false;
     }
